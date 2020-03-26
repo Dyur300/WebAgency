@@ -7,7 +7,7 @@
     position: absolute
     width: 100%
     height: 100%
-    background-color: #30326391
+    background-color: #30326395
   &-wrap
     position: relative
     z-index: 1
@@ -25,12 +25,12 @@
     +light
     text-align: center
     max-width: 870px
-    margin: 0 auto
+    margin: 0 auto    
   &__row
     display: flex
     justify-content: space-between
     max-width: 870px
-    margin: 0 auto
+    margin: 0 auto    
   &__info-box
     margin-top: 54px
   
@@ -58,3 +58,12 @@
       font-weight: 200
       font-size: 14px
       letter-spacing: 2px
+      
+  @media(max-width: 1024px)
+    .hero
+      &-wrap
+        padding: 60px 0 60px 0
+        
+  @media(max-width: 767px)
+    .info-box 
+      flex: 0 0 200px

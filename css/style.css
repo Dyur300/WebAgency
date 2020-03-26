@@ -75,7 +75,7 @@ body {
 }
 
 .navbar__link {
-  margin: 0 15px;
+  margin: 0 20px;
   text-decoration: none;
   color: #000;
 }
@@ -138,6 +138,7 @@ body {
   }
   .navbar__link {
     color: #fff;
+    margin: 0 15px;
   }
   .navbar__burger {
     display: -webkit-box;

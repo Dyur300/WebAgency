@@ -1,0 +1,110 @@
+.work-request
+  background: url('../../img/work-request/work-request-bg.jpg') no-repeat center
+  background-size: cover
+  position: relative
+  color: #fff
+  &-wrap
+    position: relative
+    z-index: 1
+    display: flex
+    justify-content: space-between
+    padding: 130px 0 115px 0
+  &__description
+    max-width: 345px
+  &-title
+    +bold
+    font-size: 30px;
+    text-transform: uppercase
+  &__title
+    margin-top: -5px
+  &__text
+    +light
+    font-size: 18px;
+    text-align: left;
+    line-height: 25px
+  .form
+    &-wrap
+      max-width: 620px
+    &__group
+      outline: none
+      padding-left: 19px
+      width: 50%
+      height: 38px
+      background: none
+      border: 4px solid #fff
+      border-bottom: 1px solid #fff 
+      color: #fff
+      float: left
+    &__textarea
+      outline: none
+      padding-left: 19px
+      resize: none
+      width: 100%
+      height: 170px
+      border: 4px solid #fff
+      color: #fff
+      background: none
+    ::placeholder
+      color: #fff
+    &__message
+      display: inline-block
+      margin-top: 10px
+      padding-left: 24px
+    &__button
+      margin-top: 14px
+    &-button
+      float: right
+      background-color: #f6ae48
+      color: #fff
+      +bold
+      font-size: 14px
+      text-transform: uppercase
+      padding: 14px 28px
+      border: none
+      border-radius: 15px
+
+  .input
+    &-name
+      border-right: 1px solid #fff
+    &-email
+      width: 100%
+      height: 46px
+      border: 4px solid #fff
+      border-bottom: 1px solid #fff 
+      background: none
+  .blue-overlay 
+    position: absolute
+    width: 100%
+    height: 100%
+    background-color: #30326395
+
+  @media(max-width: 1024px)
+    .work-request
+      &__description
+        padding-right: 20px
+  @media(max-width: 767px)
+    .work-request
+      &-wrap
+        flex-direction: column
+        padding: 65px 0 60px 0
+      &__description
+        text-align: center
+        max-width: 100%
+        padding-right: 
+      &-title 
+        font-size: 25px
+      &__text
+        font-size: 15px
+    .form
+      &-wrap
+        max-width: 100%
+  @media(max-width: 500px)
+    .form
+      &__group
+        width: 100%
+    .input
+      &-name
+        border-right: 4px solid #fff
+         
+      
+    

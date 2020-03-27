@@ -51,6 +51,10 @@ body {
   font-family: 'Proxima Nova Light', sans-serif;
 }
 
+.navbar {
+  border-bottom: 2px solid #adadad;
+}
+
 .navbar-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -131,8 +135,8 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    -webkit-transform: translateY(-150%);
+            transform: translateY(-150%);
     color: #fff;
     background-color: #5d626b;
   }
@@ -156,6 +160,10 @@ body {
 @media (max-width: 900px) and (max-width: 690px) {
   .hero {
     display: none;
+  }
+  .navbar {
+    display: fixed;
+    z-index: 2;
   }
   .navbar-wrap {
     min-height: 70px;
@@ -185,13 +193,6 @@ body {
   background-size: cover;
   color: #fff;
   position: relative;
-}
-
-.hero-overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #30326395;
 }
 
 .hero-wrap {
@@ -233,6 +234,13 @@ body {
 
 .hero__info-box {
   margin-top: 54px;
+}
+
+.hero .blue-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #30326395;
 }
 
 .hero .info-box {
@@ -280,6 +288,168 @@ body {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 200px;
             flex: 0 0 200px;
+  }
+}
+
+.work-request {
+  background: url("../../img/work-request/work-request-bg.jpg") no-repeat center;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+}
+
+.work-request-wrap {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 130px 0 115px 0;
+}
+
+.work-request__description {
+  max-width: 345px;
+}
+
+.work-request-title {
+  font-family: 'Proxima Nova Bold', sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.work-request__title {
+  margin-top: -5px;
+}
+
+.work-request__text {
+  font-family: 'Proxima Nova Light', sans-serif;
+  font-size: 18px;
+  text-align: left;
+  line-height: 25px;
+}
+
+.work-request .form-wrap {
+  max-width: 620px;
+}
+
+.work-request .form__group {
+  outline: none;
+  padding-left: 19px;
+  width: 50%;
+  height: 38px;
+  background: none;
+  border: 4px solid #fff;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  float: left;
+}
+
+.work-request .form__textarea {
+  outline: none;
+  padding-left: 19px;
+  resize: none;
+  width: 100%;
+  height: 170px;
+  border: 4px solid #fff;
+  color: #fff;
+  background: none;
+}
+
+.work-request .form ::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.work-request .form :-ms-input-placeholder {
+  color: #fff;
+}
+
+.work-request .form ::-ms-input-placeholder {
+  color: #fff;
+}
+
+.work-request .form ::placeholder {
+  color: #fff;
+}
+
+.work-request .form__message {
+  display: inline-block;
+  margin-top: 10px;
+  padding-left: 24px;
+}
+
+.work-request .form__button {
+  margin-top: 14px;
+}
+
+.work-request .form-button {
+  float: right;
+  background-color: #f6ae48;
+  color: #fff;
+  font-family: 'Proxima Nova Bold', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 15px;
+}
+
+.work-request .input-name {
+  border-right: 1px solid #fff;
+}
+
+.work-request .input-email {
+  width: 100%;
+  height: 46px;
+  border: 4px solid #fff;
+  border-bottom: 1px solid #fff;
+  background: none;
+}
+
+.work-request .blue-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #30326395;
+}
+
+@media (max-width: 1024px) {
+  .work-request .work-request__description {
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .work-request .work-request-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 65px 0 60px 0;
+  }
+  .work-request .work-request__description {
+    text-align: center;
+    max-width: 100%;
+  }
+  .work-request .work-request-title {
+    font-size: 25px;
+  }
+  .work-request .work-request__text {
+    font-size: 15px;
+  }
+  .work-request .form-wrap {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .work-request .form__group {
+    width: 100%;
+  }
+  .work-request .input-name {
+    border-right: 4px solid #fff;
   }
 }
 /*# sourceMappingURL=style.css.map */

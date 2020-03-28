@@ -214,6 +214,22 @@ body {
   }
 }
 
+@media (max-width: 400px) {
+  .navbar-wrap {
+    min-height: 55px;
+  }
+  .navbar-tel {
+    font-size: 17px;
+  }
+  .navbar__burger {
+    width: 35px;
+    height: 27px;
+  }
+  .logo {
+    font-size: 35px;
+  }
+}
+
 .hero {
   background: url("../img/hero/hero-bg.jpg") no-repeat center;
   background-size: cover;
@@ -434,7 +450,7 @@ body {
 
 @media (max-width: 991px) {
   .services-items {
-    padding-top: 100px;
+    padding-top: 60px;
     margin: 0 -10px;
   }
   .services-items__item {
@@ -499,6 +515,7 @@ body {
     padding-top: 30px;
   }
   .services-items__item {
+    padding-top: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -523,7 +540,7 @@ body {
         align-self: center;
   }
   .services-items__text {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     line-height: 22px;
   }
   .services-items-buy-button {
@@ -545,9 +562,6 @@ body {
 @media (max-width: 450px) {
   .services-description {
     background-size: 100%;
-  }
-  .services-items__text {
-    text-align: center;
   }
 }
 

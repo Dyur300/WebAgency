@@ -24,6 +24,14 @@
 }
 
 @font-face {
+  font-family: 'Proxima Nova Regular';
+  src: url("../fonts/ProximaNova-Regular.eot");
+  src: url("../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Proxima Nova Semibold';
   src: url("../fonts/ProximaNova-Semibold.eot");
   src: url("../fonts/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold.ttf") format("truetype");
@@ -82,6 +90,10 @@ body {
   margin: 0 20px;
   text-decoration: none;
   color: #000;
+}
+
+.navbar-tel {
+  display: none;
 }
 
 .navbar__burger {
@@ -157,12 +169,10 @@ body {
   }
 }
 
-@media (max-width: 900px) and (max-width: 690px) {
-  .hero {
-    display: none;
-  }
-  .navbar {
-    display: fixed;
+@media (max-width: 767px) {
+  .header {
+    position: fixed;
+    width: 100%;
     z-index: 2;
   }
   .navbar-wrap {
@@ -186,6 +196,22 @@ body {
     line-height: 25px;
     margin-bottom: 15px;
   }
+  .navbar-tel {
+    display: inline-block;
+    position: relative;
+    float: right;
+    text-decoration: none;
+    font-family: 'Proxima Nova Bold', sans-serif;
+    font-size: 30px;
+    color: #f6ae48;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar-tel {
+    font-size: 20px;
+  }
 }
 
 .hero {
@@ -205,6 +231,19 @@ body {
 
 .hero__logo {
   color: #fff;
+  display: inline-block;
+  padding-top: 15px;
+}
+
+.hero-tel {
+  position: relative;
+  float: right;
+  text-decoration: none;
+  font-family: 'Proxima Nova Bold', sans-serif;
+  font-size: 40px;
+  color: #f6ae48;
+  letter-spacing: 2px;
+  padding-top: 15px;
 }
 
 .hero__title {
@@ -284,10 +323,231 @@ body {
 }
 
 @media (max-width: 767px) {
+  .hero {
+    display: none;
+  }
   .hero .info-box {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 200px;
             flex: 0 0 200px;
+  }
+}
+
+.services {
+  padding: 130px 0 200px 0;
+}
+
+.services-description {
+  background: url("../img/services/services-description-bg.png") no-repeat center;
+  background-size: 45%;
+}
+
+.services-description-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 250px;
+}
+
+.services-description__title {
+  font-family: 'Proxima Nova Bold', sans-serif;
+  font-size: 48px;
+}
+
+.services-description__text {
+  font-family: 'Proxima Nova Regular', sans-serif;
+  max-width: 765px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.services-items {
+  padding-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.services-items__item {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  padding: 13px 15px 25px 15px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.services-items__icon {
+  color: #00b9e7;
+  font-size: 50px;
+}
+
+.services-items__icon .fa-mobile-phone {
+  font-size: 70px;
+}
+
+.services-items__icon .fa-rocket {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.services-items__price {
+  display: none;
+  font-size: 18px;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 4px 10px;
+  width: 135px;
+}
+
+.services-items__title {
+  font-family: 'Proxima Nova Bold', sans-serif;
+  font-size: 24px;
+}
+
+.services-items__text {
+  line-height: 27px;
+  font-family: 'Proxima Nova Regular', sans-serif;
+}
+
+.services-items .icon_margin {
+  margin-bottom: -13.5px;
+}
+
+.services-items-buy-button {
+  display: none;
+  color: #fff;
+  font-size: 30px;
+  float: right;
+}
+
+@media (max-width: 991px) {
+  .services-items {
+    padding-top: 100px;
+    margin: 0 -10px;
+  }
+  .services-items__item {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin-bottom: 10px;
+  }
+  .services-description__title {
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .services {
+    padding: 65px 0 100px 0;
+  }
+  .services-items {
+    padding-top: 70px;
+  }
+  .services-description {
+    background-size: 70%;
+  }
+  .services-description-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .services-description__text {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 650px) {
+  .services-items__item:hover {
+    background-color: #f6ae48;
+    color: #fff;
+    cursor: default;
+  }
+  .services-items__item:hover .services-items__icon {
+    color: #fff;
+  }
+  .services-items__item:hover .services-items__price {
+    display: inline-block;
+    color: #fff;
+  }
+  .services-items__item:hover .services-items-buy-button {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 650px) {
+  .services {
+    padding: 105px 0 50px 0;
+  }
+  .services-description__title {
+    font-size: 32px;
+    margin-bottom: -1px;
+  }
+  .services-description__text {
+    font-size: 18px;
+  }
+  .services-items {
+    padding-top: 30px;
+  }
+  .services-items__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    cursor: default;
+  }
+  .services-items__icon {
+    width: 30px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .services-items__title {
+    margin-bottom: -5px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .services-items__text {
+    padding-bottom: 10px;
+    line-height: 22px;
+  }
+  .services-items-buy-button {
+    color: #00b9e7;
+    display: inline-block;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .services-items__price {
+    border: 2px solid #00b9e7;
+    color: #00b9e7;
+    display: inline-block;
+  }
+  .services-items__buy-button {
+    margin-top: -35px;
+  }
+}
+
+@media (max-width: 450px) {
+  .services-description {
+    background-size: 100%;
+  }
+  .services-items__text {
+    text-align: center;
   }
 }
 

@@ -11,6 +11,17 @@
     padding: 125px 0 100px 0
   &__logo
     color:#fff
+    display: inline-block
+    padding-top: 15px
+  &-tel
+    position: relative
+    float: right
+    text-decoration: none
+    +bold
+    font-size: 40px
+    color: #f6ae48
+    letter-spacing: 2px
+    padding-top: 15px
   &__title
     font-size: 45px;
     +extrabold
@@ -64,5 +75,6 @@
         padding: 60px 0 60px 0
         
   @media(max-width: 767px)
+    display: none
     .info-box 
       flex: 0 0 200px

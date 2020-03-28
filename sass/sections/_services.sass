@@ -1,0 +1,143 @@
+.services
+  padding: 130px 0 200px 0
+
+
+.services-description
+  background: url('../img/services/services-description-bg.png') no-repeat center
+  background-size: 45%
+  &-wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+    min-height: 250px
+  &__title
+    +bold
+    font-size: 48px;
+
+  &__text
+    +regular
+    max-width: 765px
+    font-size: 20px;
+    text-align: left;
+
+.services-items
+  padding-top: 150px
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 0 -15px
+  &__item
+    flex-basis: 33%
+    padding: 13px 15px 25px 15px
+    transition: all .2s ease
+  &__icon
+    color: #00b9e7
+    font-size: 50px
+    .fa-mobile-phone
+      font-size: 70px
+    .fa-rocket
+      transform: rotate(-45deg)
+  &__price
+    display: none
+    font-size: 18px
+    border: 2px solid #fff
+    color: #fff
+    padding: 4px 10px
+    width: 135px
+  &__title
+    +bold
+    font-size: 24px;
+
+  &__text
+    line-height: 27px
+    +regular
+  .icon_margin
+    margin-bottom: -13.5px
+  &-buy-button
+    display: none
+    color: #fff
+    font-size: 30px
+    float: right
+@media(max-width: 991px)
+  .services
+    &-items
+      padding-top: 100px
+      margin: 0 -10px
+      &__item 
+        flex-basis: 50%
+        margin-bottom: 10px
+
+  .services-description
+    &__title
+      padding-right: 20px
+@media(max-width: 767px)
+  .services
+    padding: 65px 0 100px 0
+    &-items
+      padding-top: 70px
+    &-description
+      background-size: 70%
+      &-wrap
+        flex-wrap: wrap
+      &__text
+        max-width: 100%
+@media(min-width: 650px)
+  .services-items
+    &__item:hover
+     background-color: #f6ae48
+     color: #fff
+     cursor: default
+    &__item:hover &__icon
+      color: #fff
+    &__item:hover &__price
+      display: inline-block
+      color: #fff
+    &__item:hover &-buy-button
+      display: inline-block
+@media(max-width: 650px)
+  .services
+    padding: 105px 0 50px 0
+    &-description
+      &__title
+        font-size: 32px
+        margin-bottom: -1px
+      &__text
+        font-size: 18px
+    &-items
+      padding-top: 30px
+      &__item 
+        display: flex
+        flex-direction: column
+        flex-basis: 100%
+        cursor: default
+      &__icon
+        width: 30px
+        align-self: center
+      &__title
+        margin-bottom: -5px
+        align-self: center
+      &__text 
+        padding-bottom: 10px
+        line-height: 22px
+      &-buy-button
+        color: #00b9e7
+        display: inline-block
+        align-self: flex-end
+      &__price
+        border: 2px solid #00b9e7
+        color: #00b9e7
+        display: inline-block
+      &__buy-button
+        margin-top: -35px
+        
+@media(max-width: 450px)
+  .services
+    &-description
+      background-size: 100%
+    &-items
+      &__text
+         text-align: center
+  
+
+        
+  

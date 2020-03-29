@@ -23,15 +23,17 @@
     letter-spacing: 2px
     padding-top: 15px
   &__title
-    font-size: 45px;
+    font-size: 48px;
     +extrabold
     text-align: center
+    line-height: 40px
   &__text
     font-size: 18px;
-    +light
+    +regular
     text-align: center
     max-width: 870px
     margin: 0 auto    
+    line-height: 27px
   &__row
     display: flex
     justify-content: space-between
@@ -64,8 +66,7 @@
       margin-bottom: -10px
       padding-top: 15px
     &__title
-      font-family: Arial, sans-serif
-      font-weight: 200
+      +regular
       font-size: 14px
       letter-spacing: 2px
       
@@ -73,8 +74,51 @@
     .hero
       &-wrap
         padding: 60px 0 60px 0
-        
+      &__title
+        font-size: 40px
   @media(max-width: 767px)
-    display: none
+    .hero
+      &-wrap
+        padding: 130px 0 60px 0
+      &__margin-top
+        margin-top: 65px
+      &-tel 
+        display: none
+      &__logo 
+        display: none
+      &__title
+        font-size: 30px
+      &__info-box
+        margin-top: 30px
     .info-box 
       flex: 0 0 200px
+  @media(max-width: 650px)
+    .hero
+      &__row
+        flex-direction: column
+    .info-box
+      display: inline-block
+      flex: 0 0 80%
+      width: 80%
+      margin: 20px auto 0 auto
+  @media(max-width: 500px)
+    .hero
+      &__title
+        +bold
+        font-size: 25px
+        line-height: 35px
+    .info-box
+      width: 100%
+  @media(max-width: 450px)
+    .hero
+      &-wrap
+        padding: 110px 0 50px 0
+      &__title 
+        font-size: 23px
+        text-align: left
+      &__text
+        text-align: left
+    .info-box
+      padding: 0 0 0 0
+      &__num
+        font-size: 30px

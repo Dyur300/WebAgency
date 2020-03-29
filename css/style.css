@@ -1016,10 +1016,11 @@ body {
   margin: 0 auto;
 }
 
+.about-search__image {
+  padding-bottom: 30px;
+}
+
 @media (max-width: 768px) {
-  .about-search {
-    padding-bottom: 0;
-  }
   .about-search-wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1054,8 +1055,13 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
+  }
+  .about-search__image {
+    padding-bottom: 0;
+    width: 30%;
+    height: 70%;
   }
 }
 
@@ -1082,10 +1088,6 @@ body {
     width: 80%;
     margin: 0 auto;
   }
-  .about-search__image {
-    width: 40%;
-    height: 90%;
-  }
 }
 
 @media (max-width: 500px) {
@@ -1100,7 +1102,7 @@ body {
     margin: 0 auto;
   }
   .about-search__image {
-    width: 40%;
+    width: 35%;
     height: 90%;
   }
 }

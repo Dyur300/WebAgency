@@ -222,7 +222,7 @@ body {
     font-size: 17px;
   }
   .navbar__burger {
-    width: 35px;
+    width: 43px;
     height: 27px;
   }
   .logo {
@@ -562,6 +562,75 @@ body {
 @media (max-width: 450px) {
   .services-description {
     background-size: 100%;
+  }
+}
+
+.credo {
+  background: url("../img/credo/credo-bg.jpg") no-repeat center;
+  background-size: cover;
+  color: #fff;
+}
+
+.credo-wrap {
+  position: relative;
+  z-index: 1;
+  padding: 130px 0 160px 0;
+  text-align: center;
+}
+
+.credo__title {
+  font-family: 'Proxima Nova Bold', sans-serif;
+  font-size: 50px;
+}
+
+.credo__text {
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.blue-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #30326395;
+}
+
+@media (max-width: 991px) {
+  .credo-wrap {
+    padding: 100px 0 120px 0;
+  }
+  .credo__title {
+    font-size: 40px;
+  }
+  .credo__text {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 767px) {
+  .credo-wrap {
+    padding: 45px 0 55px 0;
+  }
+  .credo__title {
+    font-size: 30px;
+  }
+  .credo__text {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 450px) {
+  .credo-wrap {
+    padding: 50px 0 60px 0;
+  }
+  .credo__title {
+    font-size: 29px;
+  }
+  .credo__text {
+    line-height: 24px;
+    text-align: left;
   }
 }
 

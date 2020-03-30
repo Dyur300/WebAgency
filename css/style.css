@@ -744,7 +744,7 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 30%;
           flex: 0 1 30%;
-  padding: 20px;
+  padding: 50px 20px 20px 20px;
   margin: 10px;
 }
 
@@ -769,11 +769,10 @@ body {
 
 .offer-boxes__title {
   display: block;
-  margin-top: 30px;
+  margin: 0;
   font-family: 'Proxima Nova Bold', sans-serif;
   font-size: 50px;
   text-transform: uppercase;
-  margin-bottom: 3px;
 }
 
 .offer-boxes__text-group {
@@ -876,17 +875,16 @@ body {
   .hover-line {
     height: 20px;
   }
-  .offer-boxes__item {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 47%;
-            flex: 0 0 47%;
+  .offer-boxes {
+    max-width: 90%;
   }
-}
-
-@media (max-width: 874px) {
-  .offer-boxes__title_padding-bottom {
-    padding-bottom: 0;
-    line-height: 62px;
+  .offer-boxes__item {
+    margin: 0;
+    margin-bottom: 20px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 46%;
+            flex: 0 0 46%;
+    height: 320px;
   }
 }
 
@@ -916,9 +914,8 @@ body {
         -ms-flex: 0 0 70%;
             flex: 0 0 70%;
   }
-  .offer-boxes__title_padding-bottom {
-    padding-bottom: 0;
-    line-height: 45px;
+  .offer-boxes__title {
+    font-size: 37px;
   }
 }
 
@@ -935,8 +932,9 @@ body {
   }
   .offer-boxes__item {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 90%;
-            flex: 0 0 90%;
+        -ms-flex: 0 1 70%;
+            flex: 0 1 70%;
+    height: 250px;
   }
   .offer-boxes__title {
     font-size: 35px;
@@ -951,10 +949,16 @@ body {
   .development__title {
     font-size: 30px;
   }
+  .offer-boxes {
+    max-width: 95%;
+  }
   .offer-boxes__item {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 95%;
-            flex: 0 0 95%;
+        -ms-flex: 0 0 85%;
+            flex: 0 0 85%;
   }
   .offer-boxes__title {
     font-size: 30px;
@@ -962,6 +966,17 @@ body {
   }
   .offer-boxes__price {
     font-size: 15px;
+  }
+}
+
+@media (max-width: 370px) {
+  .offer-boxes {
+    max-width: 100%;
+  }
+  .offer-boxes__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 95%;
+            flex: 0 0 95%;
   }
 }
 

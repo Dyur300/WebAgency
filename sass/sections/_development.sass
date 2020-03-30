@@ -20,7 +20,7 @@
   &__item
     position: relative
     flex: 0 1 30%
-    padding: 20px
+    padding: 50px 20px 20px 20px
     margin: 10px
     &_1
       background: url('../img/development/offer-1.jpg') no-repeat center
@@ -35,11 +35,10 @@
     top: 100%
   &__title
     display: block
-    margin-top: 30px
+    margin: 0
     +bold
     font-size: 50px;
     text-transform: uppercase
-    margin-bottom: 3px
   &__text-group
     display: flex
     flex-direction: column
@@ -101,14 +100,12 @@
   .hover-line
     height: 20px
   .offer-boxes
+    max-width: 90%
     &__item
-      flex: 0 0 47%
-@media(max-width: 874px)
-  .offer-boxes
-    &__title
-       &_padding-bottom
-        padding-bottom: 0
-        line-height: 62px
+      margin: 0
+      margin-bottom: 20px
+      flex: 0 0 46%
+      height: 320px
 @media(max-width: 768px)
   .development
     transform: translateY(0)
@@ -126,9 +123,7 @@
     &__item
       flex: 0 0 70%
     &__title
-      &_padding-bottom
-        padding-bottom: 0
-        line-height: 45px
+      font-size: 37px
 .pay-item-group
   padding-top: 35px
 @media(max-width: 650px)
@@ -138,7 +133,8 @@
   .offer-boxes
     padding-top: 30px
     &__item
-      flex: 0 0 90%
+      flex: 0 1 70%
+      height: 250px
     &__title
       font-size: 35px
     &__price
@@ -150,12 +146,19 @@
     &__title
       font-size: 30px
   .offer-boxes
+    max-width: 95%
     &__item
-      flex: 0 0 95%
+      justify-content: flex-end
+      flex: 0 0 85%
     &__title
       font-size: 30px
       margin-top: 15px
     &__price
       font-size: 15px
+@media(max-width: 370px)
+  .offer-boxes
+    max-width: 100%
+    &__item
+      flex: 0 0 95%
   
 

@@ -3,8 +3,18 @@
           box-sizing: border-box;
 }
 
+.big-container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
 .container {
   max-width: 1245px;
+  margin: 0 auto;
+}
+
+.development {
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -1122,6 +1132,187 @@ body {
   }
 }
 
+.projects {
+  background-color: #303263;
+  color: #fff;
+}
+
+.projects__title-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../img/projects/title-bg.png") no-repeat center 100%;
+  background-position-y: 20px;
+  min-height: 120px;
+}
+
+.projects__title {
+  font-family: 'Proxima Nova Bold', sans-serif;
+  text-align: center;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.projects__big-images-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.projects__small-images-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.projects__image-box-lg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+
+.projects__image-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
+}
+
+.projects__image-lg {
+  width: 100%;
+  height: 100%;
+}
+
+.projects__image {
+  width: 100%;
+  height: 100%;
+}
+
+.projects__more-btn-box {
+  width: 100%;
+  padding: 25px 0;
+}
+
+.projects__more-btn {
+  display: block;
+  text-align: center;
+  max-width: 270px;
+  margin: 0 auto;
+  font-family: 'Proxima Nova Bold', sans-serif;
+  font-size: 26px;
+  text-transform: uppercase;
+  background-color: #6a6b8e;
+  padding: 22px 27px;
+  border-radius: 15px;
+}
+
+.projects__image-box-lg:hover .yellow-overlay {
+  display: block;
+}
+
+.projects__image-box:hover .yellow-overlay {
+  display: block;
+}
+
+.yellow-overlay {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f6ae48;
+  border: 7px solid #fff;
+  opacity: 0.75;
+}
+
+@media (max-width: 991px) {
+  .projects__title-block {
+    min-height: 70px;
+    background-position-y: 15px;
+    background-size: 80%;
+  }
+  .projects__title {
+    font-size: 34px;
+  }
+  .projects__more-btn-box {
+    padding: 16px 0;
+  }
+  .projects__more-btn {
+    max-width: 230px;
+    font-size: 22px;
+    padding: 15px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects__title-block {
+    min-height: 60px;
+    background-position-y: 10px;
+    background-size: 80%;
+  }
+  .projects__title {
+    font-size: 30px;
+    margin: 20px 0;
+  }
+  .projects__more-btn-box {
+    padding: 10px 0;
+  }
+  .projects__more-btn {
+    max-width: 210px;
+    font-size: 20px;
+    padding: 13px 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects__title-block {
+    min-height: 50px;
+    background-position-y: center;
+    background-size: 95%;
+  }
+  .projects__title {
+    font-size: 28px;
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects__image-box-lg {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+  .projects__image-box {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+  }
+  .projects__more-btn {
+    max-width: 170px;
+    font-size: 18px;
+    padding: 10px 14px;
+    border-radius: 10px;
+  }
+}
+
 .work-request {
   background: url("../img/work-request/work-request-bg.jpg") no-repeat center;
   background-size: cover;
@@ -1268,7 +1459,8 @@ body {
     font-size: 25px;
   }
   .work-request .work-request__text {
-    font-size: 15px;
+    font-family: 'Proxima Nova Regular', sans-serif;
+    font-size: 16px;
   }
   .work-request .form-wrap {
     max-width: 100%;

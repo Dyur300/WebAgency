@@ -25,6 +25,12 @@
   }
 }
 
+@media (max-width: 500px) {
+  .container_without-padding {
+    padding-right: 0;
+  }
+}
+
 @font-face {
   font-family: 'Proxima Nova Light';
   src: url("../fonts/ProximaNova-Light.eot");
@@ -70,12 +76,11 @@ body {
   overflow: auto;
 }
 
-.title-with-bg__block {
-  background-size: 100%;
+.title-bg {
+  padding-left: 50px;
   display: inline-block;
   height: 100px;
   width: 550px;
-  padding-left: 50px;
 }
 
 .title-with-bg {
@@ -85,35 +90,47 @@ body {
 }
 
 @media (max-width: 768px) {
-  .title-with-bg__block {
-    background-size: 80%;
-    display: inline-block;
-    height: 70px;
-    width: 100%;
+  .title-bg {
     padding-left: 0px;
-    background-position-x: center;
-    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    height: 70px;
   }
   .title-with-bg {
     font-size: 32px;
+    text-align: center;
   }
 }
 
 @media (max-width: 600px) {
-  .title-with-bg__block {
-    background-position-y: 23px;
-  }
   .title-with-bg {
     font-size: 28px;
   }
 }
 
 @media (max-width: 500px) {
-  .title-with-bg__block {
-    background: none;
-  }
   .title-with-bg {
-    text-align: center;
+    text-align: left;
+  }
+}
+
+.text-with-padding-left {
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-size: 24px;
+  padding-left: 50px;
+  line-height: 35px;
+}
+
+@media (max-width: 768px) {
+  .text-with-padding-left {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .text-with-padding-left {
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 
@@ -1041,13 +1058,9 @@ body {
   padding: 80px 0 110px 0;
 }
 
-.about-search__title-block {
+.about-search__title-bg {
   background: url("../img/about-search/title-bg.png") no-repeat center left;
   background-size: 100%;
-  display: inline-block;
-  height: 100px;
-  width: 550px;
-  padding-left: 50px;
 }
 
 .about-search__body {
@@ -1093,17 +1106,10 @@ body {
   .about-search__body {
     width: 100%;
   }
-  .about-search__title-block {
-    padding-left: 0px;
-    text-align: center;
-    width: 100%;
-    height: 70px;
-    background-size: 80%;
+  .about-search__title-bg {
+    background-size: 70%;
+    background-position-y: 20px;
     background-position-x: center;
-    margin: 0 auto;
-  }
-  .about-search__title {
-    font-size: 32px;
   }
   .about-search__text {
     padding-left: 0px;
@@ -1135,11 +1141,8 @@ body {
             flex-direction: column;
     padding: 10px 0 60px 0;
   }
-  .about-search__title-block {
+  .about-search__title-bg {
     background-position-y: 23px;
-  }
-  .about-search__title {
-    font-size: 28px;
   }
   .about-search__text {
     font-size: 18px;
@@ -1152,11 +1155,8 @@ body {
 }
 
 @media (max-width: 500px) {
-  .about-search__title-block {
+  .about-search__title-bg {
     background: none;
-  }
-  .about-search__title {
-    text-align: left;
   }
   .about-search__image-block {
     width: 80%;
@@ -1346,6 +1346,88 @@ body {
     font-size: 18px;
     padding: 10px 14px;
     border-radius: 10px;
+  }
+}
+
+.about-adaptate-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 160px 0 175px 0;
+  overflow: hidden;
+}
+
+.about-adaptate__title-bg {
+  background: url("../img/about-adaptate/title-bg.png") no-repeat center left;
+  background-size: 70%;
+  margin-bottom: 20px;
+}
+
+.about-adaptate__body {
+  width: 50%;
+}
+
+.about-adaptate__image {
+  padding-left: 50px;
+}
+
+@media (max-width: 991px) {
+  .about-adaptate-wrap {
+    padding: 100px 0 120px 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-adaptate__body {
+    width: 70%;
+  }
+  .about-adaptate__image {
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-adaptate-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 45px 0 55px 0;
+  }
+  .about-adaptate__body {
+    width: 100%;
+  }
+  .about-adaptate__image {
+    width: 100%;
+    padding-left: 0;
+    padding-top: 50px;
+  }
+  .about-adaptate__title-bg {
+    background-size: 50%;
+    background-position-y: 20px;
+    background-position-x: center;
+  }
+  .about-adaptate__body {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-adaptate__title-bg {
+    background-position-y: 23px;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-adaptate__body {
+    padding-right: 15px;
+  }
+  .about-adaptate__image {
+    width: 500px;
+  }
+  .about-adaptate__title-bg {
+    background: none;
   }
 }
 

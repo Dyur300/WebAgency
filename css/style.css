@@ -1355,6 +1355,9 @@ body {
 }
 
 @media (max-width: 600px) {
+  .projects {
+    padding: 0 3px;
+  }
   .projects__title-block {
     min-height: 50px;
     background-position-y: center;
@@ -1368,20 +1371,34 @@ body {
 
 @media (max-width: 600px) {
   .projects__image-box-lg {
+    margin: 3px;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 100%;
-            flex: 1 1 100%;
+        -ms-flex: 1 1 47%;
+            flex: 1 1 47%;
   }
   .projects__image-box {
+    margin: 3px;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 50%;
-            flex: 1 1 50%;
+        -ms-flex: 1 1 47%;
+            flex: 1 1 47%;
   }
   .projects__more-btn {
     max-width: 170px;
     font-size: 18px;
     padding: 10px 14px;
     border-radius: 10px;
+  }
+  .projects-text {
+    font-size: 15px;
+  }
+  .projects .text_small {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .projects__title-block {
+    background: none;
   }
 }
 

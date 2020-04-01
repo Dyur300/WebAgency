@@ -1,0 +1,52 @@
+.about-careful
+  &-wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 160px 0 175px 0
+  &__body
+    flex: 0 1 50%
+  &__image-block
+    flex: 0 1 50%
+    padding-left: 50px
+  &__image
+    max-width: 100%
+  &__title-bg
+    background: url('../img/about-careful/title-bg.png') no-repeat center left
+    background-size: 70%
+@media(max-width: 991px)
+  .about-careful
+    &-wrap 
+      padding: 100px 0 120px 0
+      flex-wrap: wrap
+      justify-content: center
+    &__body
+      flex: 0 1 100%
+    &__image-block
+      flex: 0 1 100%
+      padding-top: 50px
+      padding-left: 0
+      display: flex
+      justify-content: center
+
+
+@media(max-width: 768px)
+  .about-careful
+    &-wrap
+      padding: 45px 0 55px 0
+    &__title-bg
+      background-size: 55%
+      background-position-y: 20px
+      background-position-x: center
+@media(max-width: 600px)
+  .about-careful
+    &__title-bg
+      background-size: 60%
+      background-position-y: 18px
+    &__image-block 
+      display: block
+      width: 100%
+@media(max-width: 500px)
+  .about-careful
+    &__title-bg
+      background: none

@@ -1667,6 +1667,98 @@ body {
   }
 }
 
+.about-careful-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 160px 0 175px 0;
+}
+
+.about-careful__body {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.about-careful__image-block {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding-left: 50px;
+}
+
+.about-careful__image {
+  max-width: 100%;
+}
+
+.about-careful__title-bg {
+  background: url("../img/about-careful/title-bg.png") no-repeat center left;
+  background-size: 70%;
+}
+
+@media (max-width: 991px) {
+  .about-careful-wrap {
+    padding: 100px 0 120px 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about-careful__body {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+  .about-careful__image-block {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    padding-top: 50px;
+    padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-careful-wrap {
+    padding: 45px 0 55px 0;
+  }
+  .about-careful__title-bg {
+    background-size: 55%;
+    background-position-y: 20px;
+    background-position-x: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-careful__title-bg {
+    background-size: 60%;
+    background-position-y: 18px;
+  }
+  .about-careful__image-block {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-careful__title-bg {
+    background: none;
+  }
+}
+
 .work-request {
   background: url("../img/work-request/work-request-bg.jpg") no-repeat center;
   background-size: cover;
@@ -1828,5 +1920,10 @@ body {
   .work-request .input-name {
     border-right: 4px solid #fff;
   }
+}
+
+.footer {
+  min-height: 100px;
+  background-color: #f6ae48;
 }
 /*# sourceMappingURL=style.css.map */

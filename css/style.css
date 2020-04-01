@@ -1170,7 +1170,6 @@ body {
 }
 
 .projects {
-  background-color: #303263;
   color: #fff;
 }
 
@@ -1185,6 +1184,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background: url("../img/projects/title-bg.png") no-repeat center 100%;
+  background-color: #303263;
   background-position-y: 20px;
   min-height: 120px;
 }
@@ -1245,6 +1245,7 @@ body {
 .projects__more-btn-box {
   width: 100%;
   padding: 25px 0;
+  background-color: #303263;
 }
 
 .projects__more-btn {
@@ -1356,6 +1357,7 @@ body {
 
 @media (max-width: 600px) {
   .projects {
+    background-color: #303263;
     padding: 0 3px;
   }
   .projects__title-block {
@@ -1424,7 +1426,13 @@ body {
 }
 
 .about-adaptate__image {
-  padding-left: 50px;
+  padding-left: 40px;
+}
+
+@media (min-width: 1245px) {
+  .about-adaptate__image {
+    width: 140%;
+  }
 }
 
 @media (max-width: 991px) {

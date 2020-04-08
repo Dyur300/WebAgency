@@ -279,7 +279,7 @@ body {
     -webkit-transform: translateY(-150%);
             transform: translateY(-150%);
     color: #fff;
-    background-color: #1a454d;
+    background-color: #02262e;
     -webkit-transition: .4s all ease 0s;
     transition: .4s all ease 0s;
   }
@@ -348,18 +348,21 @@ body {
   .navbar-tel {
     font-size: 20px;
   }
-}
-
-@media (max-width: 400px) {
   .navbar-wrap {
     min-height: 55px;
   }
+  .navbar__links {
+    top: 57px;
+  }
+}
+
+@media (max-width: 400px) {
   .navbar-tel {
     font-size: 17px;
   }
   .navbar__burger {
-    width: 43px;
-    height: 27px;
+    width: 30px;
+    height: 30px;
   }
   .logo {
     font-size: 35px;
